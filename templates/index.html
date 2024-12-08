@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neuroddie</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/index.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="icon" href="/static/IMG/Logo.png" type="image/x-icon">
+</head>
+<body>
+    <div class="sidebar-idx_identifier rubik-sidebar_font">
+        <div class="user-login">   
+            <img src="static/IMG/NomeLogo-SF.png" alt="user-logo">
+            <h3>Ednaldo</h3>
+        </div>
+        <div class="menu-item-idx_identifier expandable sidebar-item-idx_identifier" onclick="toggleSubmenu('submenu_prof', this)">
+            <div class="icone-texto"><i class="fa-solid fa-users"></i>Profissional</div>
+            <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <div id="submenu_prof" class="submenu-idx_identifier">
+            <div class="submenu-item-idx_identifier sidebar-item-idx_identifier" onclick="loadContent('/clientes', this)">Sobre mim</div>
+            <div class="submenu-item-idx_identifier sidebar-item-idx_identifier" onclick="loadContent('/acompanhamento', this)">Histórico</div>
+            <div class="submenu-item-idx_identifier sidebar-item-idx_identifier" onclick="loadContent('/contato', this)">Contato</div>
+        </div>
+        <div class="menu-item-idx_identifier expandable sidebar-item-idx_identifier" onclick="toggleSubmenu('submenu_trab', this)">
+            <div class="icone-texto"><i class="fa-solid fa-utensils"></i>Trabalho</div>
+            <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <div id="submenu_trab" class="submenu-idx_identifier">
+            <div class="submenu-item-idx_identifier sidebar-item-idx_identifier" onclick="loadContent('/dietas', this)">Agendamentos</div>
+            <div class="submenu-item-idx_identifier sidebar-item-idx_identifier" onclick="loadContent('/Exames', this)">Exames</div>
+        </div>
+        <div class="menu-item-idx_identifier expandable sidebar-item-idx_identifier" onclick="toggleSubmenu('manutenção', this)">
+            <div class="icone-texto"><i class="fa-solid fa-screwdriver-wrench"></i>Pessoal</div>
+            <i class="fa-solid fa-chevron-down"></i></div>
+        <div id="manutenção" class="submenu-idx_identifier">
+            <div class="submenu-item-idx_identifier sidebar-item-idx_identifier" onclick="loadContent('/cad_cliente', this)">Financeiro</div>
+            <div class="submenu-item-idx_identifier sidebar-item-idx_identifier" onclick="loadContent('/edit_nutri', this)">Tarefas</div>
+            <div class="submenu-item-idx_identifier sidebar-item-idx_identifier" onclick="loadContent('/estudos', this)">Estudos</div>
+            <div class="submenu-item-idx_identifier sidebar-item-idx_identifier" onclick="loadContent('/edit_perso', this)">Configurações</div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div id="content-area">
+            <!-- O conteúdo será carregado aqui através da função loadContent -->
+        </div>
+    </div>
+    <footer class="footer-idx_identifier">
+        <div class="footer-content">
+            <h3>Neuroddie</h3>
+            <div class="social-links">
+                <p>Desenvolvido por MLwxlk</p>
+                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-facebook-f"></i> Facebook
+                </a>
+                <a href="mailto:contato@prodev.com">
+                    <i class="fas fa-envelope"></i> contato@prodev.com
+                </a>
+                <br>
+                <p>Dev:</p>
+                <a href="https://www.linkedin.com/in/alysson-leite-a22b922bb/?trk=opento_sprofile_details">
+                    <i class="fa-brands fa-linkedin"></i> Alysson Leite
+            </div>
+        </div>
+    </footer>
+    
+    <script src="{{ url_for('static', filename='JS/index.js') }}"></script>
+</body>
+</html>
