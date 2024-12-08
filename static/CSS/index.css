@@ -60,6 +60,7 @@ body {
     padding: 10px;             /* Adicione um pouco de preenchimento */
     cursor: pointer;           /* Muda o cursor para indicar que é clicável */
     border: none;
+    font-size: 20px;
 }
 
 .submenu-idx_identifier {

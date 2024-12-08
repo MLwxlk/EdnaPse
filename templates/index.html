@@ -23,26 +23,51 @@
             <i class="fa-solid fa-chevron-down"></i>
         </div>
         <div id="submenu_prof" class="submenu-idx_identifier">
-            <div class="submenu-item-idx_identifier sidebar-item-idx_identifier" onclick="loadContent('/clientes', this)">Sobre mim</div>
-            <div class="submenu-item-idx_identifier sidebar-item-idx_identifier" onclick="loadContent('/acompanhamento', this)">Histórico</div>
-            <div class="submenu-item-idx_identifier sidebar-item-idx_identifier" onclick="loadContent('/contato', this)">Contato</div>
+            <div class="submenu-item-idx_identifier sidebar-item-idx_identifier" onclick="loadContent('/sobre', this)">
+                <div class="icone-texto"><i class="fa-solid fa-address-book"></i>Sobre mim</div>
+            </div>
+            <div class="submenu-item-idx_identifier sidebar-item-idx_identifier" onclick="loadContent('/historico', this)">
+                <div class="icone-texto"><i class="fa-solid fa-list"></i>Histórico</div>
+            </div>
+            <div class="submenu-item-idx_identifier sidebar-item-idx_identifier" onclick="loadContent('/contato', this)">
+                <div class="icone-texto"><i class="fa-solid fa-comment"></i>Contato</div>
+            </div>
         </div>
         <div class="menu-item-idx_identifier expandable sidebar-item-idx_identifier" onclick="toggleSubmenu('submenu_trab', this)">
-            <div class="icone-texto"><i class="fa-solid fa-utensils"></i>Trabalho</div>
+            <div class="icone-texto"><i class="fa-solid fa-briefcase"></i>Trabalho</div>
             <i class="fa-solid fa-chevron-down"></i>
         </div>
         <div id="submenu_trab" class="submenu-idx_identifier">
-            <div class="submenu-item-idx_identifier sidebar-item-idx_identifier" onclick="loadContent('/dietas', this)">Agendamentos</div>
-            <div class="submenu-item-idx_identifier sidebar-item-idx_identifier" onclick="loadContent('/Exames', this)">Exames</div>
+            <div class="submenu-item-idx_identifier sidebar-item-idx_identifier" onclick="loadContent('/agenda', this)">
+                <div class="icone-texto"><i class="fa-solid fa-calendar-days"></i>Agendamentos</div>
+            </div>
+            <div class="submenu-item-idx_identifier sidebar-item-idx_identifier" onclick="loadContent('/exames', this)">
+                <div class="icone-texto"><i class="fa-solid fa-stethoscope"></i>Exames</div>
+            </div>
         </div>
-        <div class="menu-item-idx_identifier expandable sidebar-item-idx_identifier" onclick="toggleSubmenu('manutenção', this)">
-            <div class="icone-texto"><i class="fa-solid fa-screwdriver-wrench"></i>Pessoal</div>
-            <i class="fa-solid fa-chevron-down"></i></div>
-        <div id="manutenção" class="submenu-idx_identifier">
-            <div class="submenu-item-idx_identifier sidebar-item-idx_identifier" onclick="loadContent('/cad_cliente', this)">Financeiro</div>
-            <div class="submenu-item-idx_identifier sidebar-item-idx_identifier" onclick="loadContent('/edit_nutri', this)">Tarefas</div>
-            <div class="submenu-item-idx_identifier sidebar-item-idx_identifier" onclick="loadContent('/estudos', this)">Estudos</div>
-            <div class="submenu-item-idx_identifier sidebar-item-idx_identifier" onclick="loadContent('/edit_perso', this)">Configurações</div>
+        <div class="menu-item-idx_identifier expandable sidebar-item-idx_identifier" onclick="toggleSubmenu('pessoal', this)">
+            <div class="icone-texto"><i class="fa-solid fa-heart"></i>Pessoal</div>
+            <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <div id="pessoal" class="submenu-idx_identifier">
+            <div class="submenu-item-idx_identifier sidebar-item-idx_identifier" onclick="loadContent('/financeiro', this)">
+                <div class="icone-texto"><i class="fa-solid fa-credit-card"></i></i>Financeiro</div>
+            </div>
+            <div class="submenu-item-idx_identifier sidebar-item-idx_identifier" onclick="loadContent('/tarefas', this)">
+                <div class="icone-texto"><i class="fa-solid fa-square-check"></i>Tarefas</div>
+            </div>
+            <div class="submenu-item-idx_identifier sidebar-item-idx_identifier" onclick="loadContent('/configuracao', this)">
+                <div class="icone-texto"><i class="fa-solid fa-gear"></i>Configurações</div>
+            </div>
+        </div>
+        <div class="menu-item-idx_identifier expandable sidebar-item-idx_identifier" onclick="toggleSubmenu('estudos', this)">
+            <div class="icone-texto"><i class="fa-solid fa-pen-to-square"></i>Estudos</div>
+            <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <div id="estudos" class="submenu-idx_identifier">
+            <div class="submenu-item-idx_identifier sidebar-item-idx_identifier" onclick="loadContent('/anotacoes', this)">
+                <div class="icone-texto"><i class="fa-solid fa-pen"></i>Anotações</div>
+            </div>
         </div>
     </div>
 
