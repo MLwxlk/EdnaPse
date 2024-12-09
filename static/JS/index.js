@@ -5,7 +5,7 @@ function loadContent(page, selectedItem = null) {
             document.getElementById('content-area').innerHTML = data;
 
             // Aqui você pode chamar a função do edit_nutriJS.js se a página for a que você deseja
-            if (page === '/edit_nutri') {
+            if (page === '/sobre') {
                 
             }
             if (selectedItem) {
@@ -42,5 +42,5 @@ function selectSidebarItem(selectedItem) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    
+    loadContent('/sobre')
 });
